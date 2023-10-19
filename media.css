@@ -209,5 +209,17 @@
     }
   }
 
+  @media only screen and (max-width: 600px) {
+    /* Adjust the position of the menu icons for small screens */
+    #menuButton {
+        display: inline-block;
+        /* Add appropriate positioning properties */
+    }
+    #closeButton {
+        display: inline-block;
+        /* Add appropriate positioning properties */
+    }
+}
+
 
 
