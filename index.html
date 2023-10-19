@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claire & Trish</title>
+    <link rel="stylesheet" type="text/css" href="interest-style.css">
+    <link rel="stylesheet" type="text/css" href="interest-media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-..." crossorigin="anonymous">
+    <script src="interest-script.js"></script>
+    <script src="https://kit.fontawesome.com/bbe3fef533.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/82a4484e9a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/pic.png" alt="cl" class="cl">
+                <ul id="sidemenu" class="nav_list">
+                    <li class="nav_item">
+                        <a href="#header" class="nav_link">Home</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#about" class="nav_link">About</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#works" class="nav_link">Interest</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#portfolio" class="nav_link">Gallery</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#contact" class="nav_link">Contact</a>
+                    </li>
+                    <li class="nav_item">
+                        <i class="fa-regular fa-circle-xmark" id="closeButton"></i>
+                    </li>
+                </ul>
+                <i class="fa-solid fa-bars" id="menuButton"></i>
+            </nav>
+            <div class="header-text">
+                <p>Welcome to <span class="highlighted-text">Our Website</span></p>
+            </div>
+        </div>
+    </div>
+   <!----------------------------------------about claire--------------------------------------->
+
+   
+   <section class="about" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/kapagod.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About <span class="highlighted-text">claire</span></h1>
+                <P>Hi, I'm Clarieza Bautista, but you can call me Claire. Before I share my interest, let me introduce my self first. In addition to working towards becoming a skilled web developer right now, I also want to excel as a digital artist and graphic designer.</P>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" data-tab="skills">Skills</p>
+                    <p class="tab-links" data-tab="experience">Experience</p>
+                    <p class="tab-links" data-tab="education">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span class="highlighted-text">Graphic Design</span><br>Adobe Illustrator<br>Canva</li>
+                        <li><span class="highlighted-text">Digital Art</span><br>Ibispaintx<br>Medibang</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span class="highlighted-text">Web Design</span><br>Studied HTML, CSS, & JS<br>Built a project and portfolio website</li>
+                        <li><span class="highlighted-text">Digital Design</span><br>Digital Artist since 2020<br>With 20 pieces of digital art<br>BOLTUP Digital Artist</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span class="highlighted-text">Senior High School</span><br>Mobile Application and Web Development at STI College</li>
+                        <li><span class="highlighted-text">College</span><br>BS Information System at TUP Manila</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Script for the First About Section (claire) -->
+<script>
+    var tablinks1 = document.querySelectorAll("#about .tab-links");
+    var tabcontents1 = document.querySelectorAll("#about .tab-contents");
+   
+    function opentab1(tabname) {
+        for (tablink of tablinks1) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents1) {
+            tabcontent.classList.remove("active-tab");
+        }
+        document.getElementById(tabname).classList.add("active-tab");
+        event.target.classList.add("active-link");
+    }
+    
+    for (var i = 0; i < tablinks1.length; i++) {
+        tablinks1[i].addEventListener('click', function () {
+            opentab1(this.getAttribute("data-tab"));
+        });
+    }
+</script>
+   </section>
+<!---------------------------------------------  About Trishia Section  ------------------------>
+<div class="about-section" id="about2">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/mooncakeee.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About <span class="highlighted-text">trishia</span></h1>
+                <P>Hi, I'm Trishia San Diego, IS Student at TUP-Manila. Web developer with experience building school website and a knack for creating attractive user interfaces. Skilled experience in HTML,CSS,and BOOTSTRAP</P>
+                <div class="tab-titles">
+                    <p class="tab-links2 active-link" data-tab="skills2">Skills</p>
+                    <p class="tab-links2" data-tab="experience2">Experience</p>
+                    <p class="tab-links2" data-tab="education2">Education</p>
+                </div>
+                <div class="tab-contents2 active-tab" data-tab="skills2">
+                    <ul>
+                        <li><span class="highlighted-text">Programming & Web Dev</span><br>Vscode<br>Sublime</li>
+                        <li><span class="highlighted-text">Video Editing</span><br>Filmora<br>Alight Motion</li>
+                    </ul>
+                </div>
+                <div class="tab-contents2" data-tab="experience2">
+                    <ul>
+                        <li><span class="highlighted-text">Front-End Developer</span><br>Studied HTML, CSS, & JS<br>Built a School,Portal and portfolio website</li>
+                        <li><span class="highlighted-text">Video Editing</span><br>Video Editor and Photographer<br>Former Video Editor in SSG</li>
+                    </ul>
+                </div>
+                <div class="tab-contents2" data-tab="education2">
+                    <ul>
+                        <li><span class="highlighted-text">Senior High School</span><br>Computer System Servicing at MMMHS</li>
+                        <li><span class="highlighted-text">College</span><br>BS Information System at TUP Manila</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Script for the Second About Section (trishia) -->
+<script>
+    var tabLinks2 = document.querySelectorAll(".tab-links2");
+    var tabContents2 = document.querySelectorAll(".tab-contents2");
+   
+    function opentab2(tabname) {
+        for (tabLink2 of tabLinks2) {
+            tabLink2.classList.remove("active-link");
+        }
+        for (tabContent2 of tabContents2) {
+            tabContent2.classList.remove("active-tab");
+        }
+        document.querySelector(`.tab-contents2[data-tab="${tabname}"]`).classList.add("active-tab");
+        event.target.classList.add("active-link");
+    }
+    
+    for (var i = 0; i < tabLinks2.length; i++) {
+        tabLinks2[i].addEventListener('click', function () {
+            opentab2(this.getAttribute("data-tab"));
+        });
+    }
+</script>
+
+<!-----------------------------------------------Interest for claire & Trishia------------------------------>
+<div id="works">
+    <div class="container">
+        <h1 class="sub-title"><span class="highlighted-text">Claire and Trishia's</span> Interest</h1>
+        <div class="works-list">
+            <div>
+                <h2>---------  Claire's Interest  ---------</h2>
+                <i class="fa-solid fa-pen"></i> <i class="fa-solid fa-tv"></i> <i class="fa-solid fa-gamepad"></i> <br>
+                <h2>Digital Portrait</h2>
+                <p>Art is like my soulmate. Among the many forms of art, my love for digital portraits has grown to become a profound and cherished passion.</p>
+                <h2>Watching Movies</h2>
+                <p>Watching movies is not just a hobby for me; it's a deep-seated passion and a gateway to a world of boundless imagination and storytelling.</p>
+                <h2>Gaming</h2>
+                <p>My interest in gaming transcends the act of playing; it encompasses the immersive worlds, intricate narratives, and the vibrant gaming community that makes this pastime so special.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h2>---------  Trishia's Interest  ---------</h2>
+                <i class="fa-solid fa-camera-retro"></i> <i class="fa-solid fa-tv"></i> <i class="fa-solid fa-shuffle"></i> <br>
+                <h2>Photoshoot</h2>
+                <p>As a person, I enjoy taking random images wherever I go since it helps me remember every experience in my life, joyful or sad, no matter how fantastic or awful it was. I never allow a chance to capture a moment get away.</p>
+                <h2>Shoe Collection</h2>
+                <p>I enjoy collecting shoes, especially Jordan sneakers, and I recently discovered the New Balance line. The collection of various shoes is one of the things that makes me happy. Having a large shoe business in the Philippines and being well-known in Asia as a shoe collector .</p>
+                <h2>Playing Music</h2>
+                <p>I enjoy listening to music because it helps me relax, especially while I'm studying or experiencing anxiety attacks. while I initially entered the music industry, Taylor Swift and Arthur Nery were my musical role models.
+</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------------------------------------------for gallery------------------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title"><span class="highlighted-text">Claire & Trishia's</span> Gallery</h1>
+        <div class="design-list">
+            <div class="design">
+                <img src="images/art.png">
+                <div class="layer">
+                    <h3>Claire's Digital Art</h3>
+                    <p>Art Names; <br> Paloma <br> Caoimhe <br> Zephyr <br>  Seraphina </p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="design">
+                <img src="images/movies.png">
+                <div class="layer">
+                    <h3>Claire's Favorite Movies</h3>
+                    <p> Doctor Strange in Multiverse of Madness <br>Lord of The Rings <br>Harry Potter <br> Pirates of the Carribean</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="design">
+                <img src="images/games.png">
+                <div class="layer">
+                    <h3>Claire's Favorite Online Games</h3>
+                    <p>Mobile Legends <br>Genshin Impact</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="design">
+                <img src="images/photoshot.png">
+                <div class="layer">
+                    <h3>PHOTOSHOOT</h3>
+                    <p>photoshoot in: Intramuros <br>Circuit Makati <br>Cloud 9<br> Canyon Cove</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="design">
+                <img src="images/shoes.png">
+                <div class="layer">
+                    <h3>SHOES COLLECTION</h3>
+                    <p>Shoes Name: Valencia <br> Jordan 1 "Lost and Found"<br> Jordan 1 "Travis Scott"<br> Jordan 1 "Black Phantom"<br> COnverse "CDG play<br> NB "2000r"</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="design">
+                <img src="images/music.png">
+                <div class="layer">
+                    <h3>MUSIC LOVER</h3>
+                    <p>Music Name: Here with me <br>Padaba Taka<br> Nothings Gonna Change Mylove<br> Lover by Taylor Swift</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#"class="btn">See more</a>
+    </div>
+</div>
+<!-----------------------------------------------Contacts------------------------------->
+<section class="contact-us">
+    <div id="contact">
+        <div class="contact-title">
+            <h1 class="sub-title"><span class="highlighted-text contact-word">Contact</span> Us</h1>
+        </div>
+        <div class="contact-row">
+            <div class="contact-content">
+                <img class="contact-image" src="images/kapagod.png">
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/itsxloki?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@themischiefloki"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://instagram.com/itsxlokiii?igshid=NzZlODBkYWE4Ng="><i class="fa-brands fa-square-instagram"></i></a>
+                </div>
+                <div class="school_email">
+                    <p><i class="fa-solid fa-paper-plane"></i>clarieza.bautista@tup.edu.ph</p>
+                </div>
+            </div>
+            <div class="contact-content">
+                <img class="contact-image" src="images/mooncakeee.png">
+
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/trishia.sandiego.5?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@weaaaaak30?_t=8gZlLlmKRce&_r=1"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://instagram.com/trishiasandiego?igshid=NGVhN2U2NjQ0Yg=="><i class="fa-brands fa-square-instagram"></i></a>
+                </div>
+                <div class="school_email">
+                    <p><i class="fa-solid fa-paper-plane"></i>trishia.sandiego@tup.edu.ph</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="copyright">
+    <div class="fruits">
+        <p>Copyright © Clarieza Bautista and Trishia San Diego 2023 All Rights Reserve <br>Thank you for visiting Our Website! <i class="fa-solid fa-heart"></i></p>
+    </div>
+</section>
+
+<script src="interest-script.js"></script>
+</body>
+</html>
