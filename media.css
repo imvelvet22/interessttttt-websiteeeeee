@@ -218,8 +218,12 @@
     #closeButton {
         display: inline-block;
         /* Add appropriate positioning properties */
+
     }
 }
 
-
-
+@media only screen and (max-width: 600px) {
+.fa-solid.fa-bars {
+  display: none;
+}
+}

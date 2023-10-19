@@ -535,7 +535,7 @@ nav ul li a:hover::after {
 
 #closeButton, #menuButton {
   float: right; /* Align the buttons to the right */
-  margin-right: 50px;
+  margin-right: 20px;
 }
 
 .fa-regular.fa-circle-xmark,
