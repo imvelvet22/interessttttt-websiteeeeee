@@ -111,7 +111,7 @@
 
 @media only screen and (max-width: 600px) {
 #about2 {
-  padding: 30px 0; /* Reduce the top padding to move the content higher on the page */
+  padding: 30px 0; 
   color: #fff7f7;
 }
 
@@ -123,14 +123,14 @@
 
 #about2 .about-col-1 {
   flex-basis: 35%;
-  margin-top: -70px; /* Adjust the margin-top to move the image and content higher */
+  margin-top: -70px; 
 }
 
 #about2 .about-col-1 img {
-  width: 180%; /* Adjust the width to make the image larger */
-  max-width: 500px; /* Optionally, set a maximum width to limit the image size */
-  height: auto; /* Maintain the aspect ratio */
-  border-radius: 15px; /* Keep the border-radius if needed */
+  width: 180%; 
+  max-width: 500px; 
+  height: auto; 
+  border-radius: 15px; 
  
 }
 
@@ -193,7 +193,7 @@
   display: block;
   position: fixed;
   top: 10px;
-  right: 10px;
+  right: 30px; /*position of the icon*/
   font-size: 25px;
   z-index: 9999; /* Ensure it's above other elements */
   cursor: pointer;
