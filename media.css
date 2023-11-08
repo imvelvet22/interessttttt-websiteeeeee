@@ -208,5 +208,45 @@
   }
 }
 
+@media only screen and (max-width: 600px) {
+  /* Remove background images */
+  #header {
+    background-image: none;
+  }
+  #about {
+    background-image: none;
+  }
+  #about2 {
+    background-image: none;
+  }
+  #works {
+    background-image: none;
+  }
+  #portfolio {
+    background-image: none !important;
+  }
+  #contact {
+    background-image: none !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* Remove background image in the .contact-us section */
+  .contact-us {
+    background-image: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* Remove background image in the #portfolio section */
+  #container {
+    background-image: none;
+  }
+}
+
+
+
+
+
 
 

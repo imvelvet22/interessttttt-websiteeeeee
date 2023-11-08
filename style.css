@@ -326,15 +326,15 @@ nav ul li a:hover::after {
   margin-bottom: 10px;
 }
 
-.works-list > div:hover {
-  background: #ad3f6b;
+.works-list > div:hover {  /*the color of interest when click or cursor is position*/
+  background: hsl(336, 47%, 46%);
   transform: translateY(-10px);
 }
 
 /*-----------------------------------------------------portfolio----------------------------*/
 #portfolio {
   padding: 50px 0;
-  background-color: #a65bb9;
+  background-color: #8f698d;
 }
 
 .design-list {
@@ -541,4 +541,26 @@ nav ul li a:hover::after {
 .fa-regular.fa-circle-xmark, /*to remove the appearance of menu icon during wide screen*/
 .fa-solid.fa-bars {
     display: none;
+}
+
+#about {
+  background-image: url(images/tt.jpg);
+  background-size: cover;
+  background-position: center top; /* Set the position to the top center */
+  padding-top: 0;
+  font-size: 15px;
+  color: #f8f7f7;
+  text-align: left;
+  margin-right: 30px;
+}
+
+#about {
+  background-image: url(images/tt.jpg);
+  background-size: cover;
+  background-attachment: fixed; /* Keep the background fixed */
+  padding-top: 0;
+  font-size: 15px;
+  color: #f8f7f7;
+  text-align: left;
+  margin-right: 30px;
 }
